@@ -1,24 +1,9 @@
-# README
+# Gem devise
+- Add gemfile: gem 'devise'
+- Run: bundle install, rails generate devise:install
+- Create model and db migrate: rails generate devise User
+- Go to forder: config/environments/development.rb, 
+  paste: config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+- Paste in controller:   before_action :authenticate_user!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Document: https://viblo.asia/p/gioi-thieu-gem-devise-amoG84YnGz8P
